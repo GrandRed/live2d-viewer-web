@@ -12,6 +12,9 @@ let agent;
 if (process.env.http_proxy) {
     console.log('Using proxy:', process.env.http_proxy);
     agent = new HttpsProxyAgent(process.env.http_proxy);
+} else {
+    // console.log('手动设置: Using proxy:', process.env.http_proxy);
+    // agent = new HttpsProxyAgent("http://127.0.0.1:10809");
 }
 
 function normalize(repo) {

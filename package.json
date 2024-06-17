@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "node scripts/postbuild.js && gh-pages -d dist"
+    "deploy": "node scripts/postbuild.js && gh-pages -d dist",
+    "download": "node scripts/download.js",
+    "parse": "node scripts/parse.js"
   },
   "main": "index.js",
   "dependencies": {
